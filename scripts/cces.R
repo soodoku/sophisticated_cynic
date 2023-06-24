@@ -1,8 +1,5 @@
 # Sophisticated Cynic
 
-# set dir.
-setwd(githubdir)
-setwd("sophisticated_cynic/")
 # Load libs
 library(tidyverse)
 library(car)
@@ -14,7 +11,9 @@ library(ggplot2)
 se <- function(x) sd(x, na.rm = T)/sqrt(length(x[!is.na(x)]))
 
 # Read in data
-cces <- foreign::read.spss("data/cces/UCM_CES2020_Unweighted_Data.sav", to.data.frame = T)
+cces <- foreign::read.spss("../data/cces/UCM_CES2020_Unweighted_Data.sav", to.data.frame = T)
+
+with(cces, table(AGTPolCynic_split, AGTPolCynic_AGTGoodBad_order))
 
 cces$AGTPolCynic_pren <- car::recode(cces$AGTPolCynic_pre, "'Extremely Sophisticated' = 1; 
                                                     'Very Sophisticated' = .83; 
@@ -28,7 +27,7 @@ cynic <- cces %>%
   group_by(AGTPolCynic_split, AGTGoodBad_pre) %>%
   summarize(avg = mean(as.numeric(AGTPolCynic_pren), na.rm = T), 
             n = n(),
-            std_error = se(as.numeric(AGTPolCynic_pren)))
+            std_error = sd(as.numeric(AGTPolCynic_pren), na.rm = T)/n())
 
 # hidden republicans among ind. to interpret
   
