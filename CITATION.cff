@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite the paper when using this analysis."
+title: "Is Cynicism Taken as Evidence of Political Sophistication?"
+type: software
+version: 0.1.0
+authors:
+  - family-names: Sood
+    given-names: Gaurav
+  - family-names: Theodoridis
+    given-names: Alexander G.
+    website: https://alexandertheodoridis.com/
+repository-code: https://github.com/soodoku/sophisticated_cynic
+preferred-citation:
+  type: unpublished
+  title: "Is Cynicism Taken as Evidence of Political Sophistication?"
+  authors:
+    - family-names: Sood
+      given-names: Gaurav
+    - family-names: Theodoridis
+      given-names: Alexander G.
+  year: 2026
+  notes: Working paper.
+  url: https://github.com/soodoku/sophisticated_cynic

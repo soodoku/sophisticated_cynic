@@ -1,3 +1,18 @@
 
-scripts/.Rhistory
 .DS_Store
+.Rhistory
+.RData
+.Rproj.user/
+renv/library/
+renv/staging/
+data/derived/
+tmp/
+ms/*.aux
+ms/*.log
+ms/*.out
+ms/*.fls
+ms/*.fdb_latexmk
+ms/*.synctex.gz
+ms/*.bbl
+ms/*.blg
+ms/*.xdv

@@ -1,0 +1,22 @@
+Package: sophisticatedcynic
+Type: Project
+Title: Is Cynicism Taken as Evidence of Political Sophistication?
+Version: 0.1.0
+Authors@R: c(
+    person("Gaurav", "Sood", role = c("aut", "cre"), email = "gsood07@gmail.com"),
+    person("Alexander G.", "Theodoridis", role = "aut"))
+Description: Reproducible analysis of a two-arm tweet comparison in the 2020
+    Cooperative Election Study UCM module, with data checks, sensitivity
+    analyses, and a generated research report.
+Encoding: UTF-8
+Imports:
+    digest,
+    ggplot2,
+    haven,
+    sandwich
+Suggests:
+    lintr,
+    renv,
+    styler,
+    testthat
+Config/testthat/edition: 3

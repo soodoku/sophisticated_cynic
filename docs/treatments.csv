@@ -1,0 +1,7 @@
+file,assignment_code,label,text,mapping_status
+ps_bb_tweet.jpg,1,PolTweetBadBad,"Politics attracts bad people and the system rewards bad behavior.",Inferred from matching filename and codebook label; display not independently verified
+ps_gb_tweet.jpg,2,PolTweetGoodBad,"Politics attracts good people but the system rewards bad behavior.",Inferred from matching filename and codebook label; display not independently verified
+ps_good_tweet.jpg,3,PolTweetGood,"Politics attracts good people and the system rewards good behavior so they generally do good things.",Plausible filename match to unused code 3; zero observations
+ps_m_cynical_tweet.jpg,,,"Politics attracts good people but the system rewards bad behavior so they generally do bad things.",No observed assignment mapping established
+ps_v_cynical_tweet.jpg,,,"Politics attracts bad people and the system rewards bad behavior so they generally do bad things.",No observed assignment mapping established
+ps_n_cynical_tweet.jpg,,,"Politics attracts good people and even though the system rewards bad behavior, they generally do good things.",No observed assignment mapping established

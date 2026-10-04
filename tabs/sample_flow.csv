@@ -1,0 +1,9 @@
+"sample","order","arm","assigned_n","sophistication_n","belief_n","unexpected_missing_n"
+"full",1,"Good people",370,370,0,0
+"full",1,"Bad people",341,341,0,0
+"full",2,"Good people",345,0,345,0
+"full",2,"Bad people",371,0,371,0
+"matched",1,"Good people",261,261,0,0
+"matched",1,"Bad people",244,244,0,0
+"matched",2,"Good people",230,0,230,0
+"matched",2,"Bad people",265,0,265,0
