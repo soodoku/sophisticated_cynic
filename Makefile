@@ -1,7 +1,7 @@
 .PHONY: restore analysis figures tables manuscript paper format lint test check clean
 
 restore:
-	Rscript -e 'if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv", repos = "https://cloud.r-project.org"); renv::restore(prompt = FALSE)'
+	Rscript --vanilla -e 'if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv", repos = "https://cloud.r-project.org"); renv::load(project = getwd()); renv::restore(prompt = FALSE)'
 
 analysis:
 	Rscript scripts/run_all.R
